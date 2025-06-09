@@ -10,7 +10,14 @@ Este é um aplicativo mobile desenvolvido com **React Native** e **Expo Router**
 - Visualização rápida de links salvos  
 
 ## 🖼️ Preview
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e3bdaff5-bfb1-4125-ba80-510ac1ee71d8" alt="Preview 1" width="45%" />
+  <img src="https://github.com/user-attachments/assets/8b1c2fd6-b1ab-418f-857d-73d7a3e07d85" alt="Preview 2" width="45%" />
+</p>
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3ea0314a-f708-44fd-a6bf-1be88869fd16" alt="Preview 3" width="60%" />
+</p>
 
 
 > Substitua `"caminho/para/sua-imagem.png"` pelo caminho correto da imagem ou URL hospedada.
