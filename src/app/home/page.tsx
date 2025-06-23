@@ -1,18 +1,20 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { View, Image, TouchableOpacity, FlatList, Modal, Text, Linking, Alert } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 import { router, useFocusEffect } from 'expo-router'; 
 
-import { styles } from "../../constants/styles-index"
-import { colors } from "@/styles/colors";
+import { styles } from "../../styles/styles-home"
+import { colors } from "@/constants/colors";
 import { categories } from '@/utils/categories';
 import { linkStorage, LinkStorage  } from '@/storage/link-storage';
 
 import { Link } from "@/components/link";
 import { Option } from '@/components/option';
 import { Categories } from "@/components/categories";
+import { supabase } from '@/lib/supabase';
+import { useAuth } from '../../contexts/AuthContext';
 
-export default function Index() {
+export default function Home() {
   const [showModal, setShowModal] = useState(false);
   const [link, setLink] = useState<LinkStorage>({} as LinkStorage);
   const [links, setLinks] = useState<LinkStorage[]>([]);
@@ -57,6 +59,8 @@ export default function Index() {
         ])
     } 
 
+    
+
   async function handleOpen() {
     try {
       await Linking.openURL(link.url);
@@ -66,6 +70,17 @@ export default function Index() {
     }
   }
 
+  const { setAuth } = useAuth();
+
+  async function handleSignout() {
+    const{ error } = await supabase.auth.signOut();
+    setAuth(null);
+
+    if (error) {
+      Alert.alert("Error", "Não foi possível deslogar");
+      return;
+  }
+}
 
   useFocusEffect(
     useCallback(() => {
@@ -73,13 +88,16 @@ export default function Index() {
     }, [category])
   );
 
-
     return (
         <View style={styles.container}> 
+          <TouchableOpacity onPress={handleSignout}>
+            <Text style={styles.signOut}>Deslogar</Text>
+          </TouchableOpacity>
+
           <View style={styles.header}>
             <Image source={require("@/assets/logo.png")} style={styles.logo} />
-            
-            <TouchableOpacity onPress={() => router.navigate("/add")}>
+                       
+            <TouchableOpacity onPress={() => router.navigate("/add/page")}>
               <MaterialIcons name="add" size={32} color={colors.green[300]} />
             </TouchableOpacity>
           </View> 
@@ -99,7 +117,7 @@ export default function Index() {
            style={styles.links}
            contentContainerStyle={styles.linksContent}
            showsVerticalScrollIndicator={false}
-           />
+           />          
 
            <Modal transparent visible={showModal} animationType='slide'>
             <View style={styles.modal}>

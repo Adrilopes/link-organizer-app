@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 import { styles } from './styles'; 
-import { colors } from '@/styles/colors';
+import { colors } from '@/constants/colors';
 
 type Props = {
     name: string

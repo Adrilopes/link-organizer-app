@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { colors } from "@/styles/colors";
+import { colors } from "@/constants/colors";
 
 export const styles = StyleSheet.create({
     container: {
@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginBottom: 32,
+        marginBottom: 12,
     },
     logo: {
         height: 32,
@@ -73,5 +73,13 @@ export const styles = StyleSheet.create({
         borderTopWidth: 1,
         borderTopColor: colors.gray[600],
         paddingVertical: 14,
+    },
+    signOut: {
+        fontSize: 16, 
+        fontWeight: "bold", 
+        color: colors.gray[400],
+        alignItems: 'flex-start',
+        paddingHorizontal: 24, 
+        marginBottom: 12
     }
 });

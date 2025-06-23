@@ -1,13 +1,27 @@
 # Links App
 
-Este é um aplicativo mobile desenvolvido com **React Native** e **Expo Router**. Ele permite armazenar, organizar e visualizar links úteis de forma offline, categorizados por tipo de conteúdo como artigos, vídeos, cursos, projetos, entre outros.
+Este é um aplicativo mobile desenvolvido com **React Native** e **Expo Router**. Ele permite armazenar, organizar e visualizar links úteis categorizados por tipo de conteúdo como artigos, vídeos, cursos, projetos, entre outros.
 
-## ✨ Funcionalidades
+Com **autenticação integrada via Supabase API**, cada usuário tem seus próprios links sincronizados na nuvem, garantindo acesso seguro e backup automático dos dados.
 
-- Adição de novos links com nome, URL e categoria  
-- Armazenamento local usando `AsyncStorage` (não requer conexão com internet)  
-- Filtros por categoria  
-- Visualização rápida de links salvos  
+markdown## ✨ Funcionalidades
+
+### 📚 Versão 1.0 (Curso Rocketseat)
+- ✅ Adição de novos links com nome, URL e categoria  
+- ✅ Armazenamento local usando `AsyncStorage` (não requer conexão com internet)  
+- ✅ Filtros por categoria  
+- ✅ Visualização rápida de links salvos  
+
+### 🚀 Versão 2.0 (Desenvolvimento Próprio)
+- 🆕 Sistema de autenticação completo (Login/Logout)
+- 🆕 Integração com Supabase API REST
+- 🆕 Login/Cadastro com Supabase  
+- 🆕 Sistema de logout seguro
+- 🆕 Persistência de dados na nuvem por usuário
+- 🆕 Rotas protegidas (apenas usuários logados)
+- 🆕 Persistência de sessão (mantém login após fechar app)
+
+> **Evolução:** Projeto iniciado no minicurso da Rocketseat e expandido com funcionalidades próprias de autenticação e banco de dados.
 
 ## 🖼️ Preview
 
@@ -20,7 +34,9 @@ Este é um aplicativo mobile desenvolvido com **React Native** e **Expo Router**
 - [React Native](https://reactnative.dev/)  
 - [Expo Router](https://expo.github.io/router/docs)  
 - [TypeScript](https://www.typescriptlang.org/)  
-- [AsyncStorage](https://react-native-async-storage.github.io/async-storage/)  
+- [AsyncStorage](https://react-native-async-storage.github.io/async-storage/)
+- [Supabase](https://supabase.com/) - Backend as a Service e API REST
+- [Supabase Auth](https://supabase.com/auth) - Sistema de autenticação
 
 ## 🚀 Como rodar o projeto
 

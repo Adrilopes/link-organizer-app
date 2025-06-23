@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-, "src/constants/styles-add.ts", "src/constants/styles-index.ts"  ]
+, "src/styles/styles-add.ts", "src/styles/styles-home.ts"  ]
 }

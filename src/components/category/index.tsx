@@ -1,6 +1,6 @@
 import { Text, Pressable, PressableProps } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
-import { colors } from '@/styles/colors';
+import { colors } from '@/constants/colors';
 import { styles } from './styles';
 
 type Props = PressableProps & {

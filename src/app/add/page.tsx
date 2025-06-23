@@ -3,8 +3,8 @@ import { View, Text, TouchableOpacity, Alert } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 import { router } from 'expo-router';
 
-import { styles } from '../../constants/styles-add';
-import { colors } from '@/styles/colors';
+import { styles } from '../../styles/styles-add';
+import { colors } from '@/constants/colors';
 import { linkStorage } from '@/storage/link-storage';
 
 import { Categories } from '@/components/categories';

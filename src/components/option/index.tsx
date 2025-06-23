@@ -1,7 +1,7 @@
 import { Text, TouchableOpacity, TouchableOpacityProps } from 'react-native';
 
 import { styles } from "./styles";
-import { colors } from "@/styles/colors";
+import { colors } from "@/constants/colors";
 import { MaterialIcons } from '@expo/vector-icons';
 
 
