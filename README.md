@@ -4,7 +4,7 @@ Este é um aplicativo mobile desenvolvido com **React Native** e **Expo Router**
 
 Com **autenticação integrada via Supabase API**, cada usuário tem seus próprios links sincronizados na nuvem, garantindo acesso seguro e backup automático dos dados.
 
-markdown## ✨ Funcionalidades
+## ✨ Funcionalidades
 
 ### 📚 Versão 1.0 (Curso Rocketseat)
 - ✅ Adição de novos links com nome, URL e categoria  
@@ -24,10 +24,7 @@ markdown## ✨ Funcionalidades
 > **Evolução:** Projeto iniciado no minicurso da Rocketseat e expandido com funcionalidades próprias de autenticação e banco de dados.
 
 ## 🖼️ Preview
-![Image](https://github.com/user-attachments/assets/b9335d0c-ac7b-4041-bb34-1d0a0775d2be)
-
-
-> Substitua `"caminho/para/sua-imagem.png"` pelo caminho correto da imagem ou URL hospedada.
+![Image](https://github.com/user-attachments/assets/8265e155-82eb-435d-9bc3-455e5965c472)
 
 ## 📱 Tecnologias utilizadas
 
